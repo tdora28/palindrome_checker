@@ -1,5 +1,23 @@
+:root {
+  --font-base: 'Lato', sans-serif;
+  --font-display: 'Vina Sans', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-base);
+  color: #333;
+}
+
+input {
+  font-family: inherit;
+}
+
+h1 {
+  font-family: var(--font-display);
 }

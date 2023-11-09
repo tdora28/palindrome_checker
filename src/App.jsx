@@ -24,9 +24,11 @@ function App() {
 
   return (
     <>
-      <h1>Palindrome Checker</h1>
-      <input type='text' id='userInput' value={userInput} placeholder='Type here...' onChange={(e) => setUserInput(e.target.value)} />
-      {checkPalindrome(userInput)}
+      <main>
+        <h1>Palindrome Checker</h1>
+        <input type='text' id='userInput' value={userInput} placeholder='Type here...' onChange={(e) => setUserInput(e.target.value)} />
+        <div className='result'>{checkPalindrome(userInput)}</div>
+      </main>
     </>
   );
 }
