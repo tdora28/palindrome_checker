@@ -18,7 +18,7 @@ function App() {
   };
 
   const cleanInput = (susInput) => {
-    const cleaned = susInput.replace(/\s/g, '').toLowerCase();
+    const cleaned = susInput.replace(/[^A-Z0-9]+/gi, '').toLowerCase();
     return cleaned;
   };
 
