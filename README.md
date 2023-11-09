@@ -1,6 +1,6 @@
 # Palindrome Checker
 
-This is an assignment is for Business College Helsinki (REACT23S Databases and Data Structures)
+This is an assignment for Business College Helsinki (REACT23S Databases and Data Structures)
 
 ## Description
 
