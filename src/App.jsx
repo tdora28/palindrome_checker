@@ -18,6 +18,7 @@ function App() {
   };
 
   const cleanInput = (susInput) => {
+    // Regex: Match any character that is NOT in the given set (A-Z and 0-9, case insensitive), eg. match any non-alphanumeric character
     const cleaned = susInput.replace(/[^A-Z0-9]+/gi, '').toLowerCase();
     return cleaned;
   };
@@ -26,8 +27,8 @@ function App() {
     <>
       <main>
         <h1>Palindrome Checker</h1>
-        <input type='text' id='userInput' value={userInput} placeholder='Type here...' onChange={(e) => setUserInput(e.target.value)} />
-        <div className='result'>{checkPalindrome(userInput)}</div>
+        <input type="text" id="userInput" value={userInput} placeholder="Type here..." onChange={(e) => setUserInput(e.target.value)} />
+        <div className="result">{checkPalindrome(userInput)}</div>
       </main>
     </>
   );
