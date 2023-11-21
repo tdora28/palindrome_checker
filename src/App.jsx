@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Footer from './Footer';
 
 function App() {
   const [userInput, setUserInput] = useState('');
@@ -30,6 +31,7 @@ function App() {
         <input type="text" id="userInput" value={userInput} placeholder="Type here..." onChange={(e) => setUserInput(e.target.value)} />
         <div className="result">{checkPalindrome(userInput)}</div>
       </main>
+      <Footer />
     </>
   );
 }
